@@ -103,7 +103,7 @@ void setBombs(){
       for (int i = 0; i< bombCount; i++) { 
         int col=int(random(4));
         int row=int(random(4));
-      println(col,"&",row);
+      //println(col,"&",row);
       if(slot[col][row]==SLOT_OFF){
         slot[col][row]=SLOT_BOMB;
       }else{
@@ -170,7 +170,7 @@ void mouseClicked(){
        // select 1~9
        //int num = int(mouseX / (float)width*9) + 1;
        int num = (int)map(mouseX, 0, width, 0, 9) + 1;
-       println (num);
+       //println (num);
        bombCount = num;
        
        // start the game
@@ -201,7 +201,7 @@ void mousePressed(){
 //----------Right Click---------------
 
 //------------------------------------
-println(clickCount);
+//println(clickCount);
 }
 }
 
